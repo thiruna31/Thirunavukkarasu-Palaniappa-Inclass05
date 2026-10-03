@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Graduate-level CSS Arcade Night Activity 05 demonstrating Flexbox, Grid, keyframe animation, positioning, z-index, accessibility and responsive CSS.">
+  <title>CSS Arcade Night | Activity 05</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="CSS Arcade Night home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>CSS<span>ARCADE</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#play">Play</a>
+        <a href="#scores">Scores</a>
+        <a href="#checkpoints">Checkpoints</a>
+        <a href="#layers">Layers</a>
+        <a href="tic-tac-toe-cabinet/index.html">Full Cabinet</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CSC 4370/6370 · Activity 05 · Graduate</p>
+          <h1>CSS <span>Arcade</span> Night</h1>
+          <p class="hero-lead">
+            A zero-JavaScript arcade cabinet built as a standards-focused demonstration
+            of Flexbox, CSS Grid, keyframe motion, positioning, z-index, responsive design,
+            accessibility, and polished interaction states.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#play">Start Cabinet</a>
+            <a class="button button-ghost" href="#checkpoints">Inspect Checkpoints</a>
+            <a class="button button-ghost" href="tic-tac-toe-cabinet/index.html">Open Full Cabinet</a>
+          </div>
+          <div class="metrics" aria-label="Project highlights">
+            <div><strong>06</strong><span>CSS checkpoints</span></div>
+            <div><strong>00</strong><span>JavaScript files</span></div>
+            <div><strong>100%</strong><span>responsive layout</span></div>
+          </div>
+        </div>
+
+        <div class="arcade-shell" aria-label="CSS-only arcade cabinet illustration">
+          <div class="cabinet-header">
+            <span>NEON//PLAYER 01</span>
+            <span class="status"><i aria-hidden="true"></i> ONLINE</span>
+          </div>
+          <div class="screen-frame">
+            <div class="screen-grid" aria-hidden="true"></div>
+            <div class="screen-content">
+              <p class="screen-kicker">INSERT CSS</p>
+              <h2 class="screen-title">READY!</h2>
+              <p class="screen-subtitle">FLEX · GRID · MOTION · LAYERS</p>
+            </div>
+          </div>
+          <div class="control-deck">
+            <div class="joystick" aria-hidden="true"><span></span></div>
+            <div class="arcade-buttons" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="cabinet-foot" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="play" class="section section-alt" aria-labelledby="play-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Round 3 · Checkpoint 2</p>
+          <h2 id="play-title">Tic-Tac-Toe Showdown</h2>
+          <p>Three equal Grid tracks, deliberate gaps, responsive cells, and accessible labels. Empty cells are interactive CSS-only move toggles; no JavaScript is used.</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="board-wrap">
+            <div class="board-glow" aria-hidden="true"></div>
+            <div class="game-board" role="group" aria-label="Tic-tac-toe CSS interaction demo">
+              <div class="cell x" role="gridcell" aria-label="Row 1 column 1: X">X</div>
+              <div class="cell o" role="gridcell" aria-label="Row 1 column 2: O">O</div>
+              <span class="cell-slot"><input class="move-toggle" type="checkbox" id="main-c3">
+              <label class="cell cell-toggle" for="main-c3" aria-label="Row 1 column 3: toggle X move"></label></span>
+              <div class="cell o" role="gridcell" aria-label="Row 2 column 1: O">O</div>
+              <div class="cell x" role="gridcell" aria-label="Row 2 column 2: X">X</div>
+              <span class="cell-slot"><input class="move-toggle" type="checkbox" id="main-c6">
+              <label class="cell cell-toggle" for="main-c6" aria-label="Row 2 column 3: toggle X move"></label></span>
+              <span class="cell-slot"><input class="move-toggle" type="checkbox" id="main-c7">
+              <label class="cell cell-toggle" for="main-c7" aria-label="Row 3 column 1: toggle X move"></label></span>
+              <span class="cell-slot"><input class="move-toggle" type="checkbox" id="main-c8">
+              <label class="cell cell-toggle" for="main-c8" aria-label="Row 3 column 2: toggle X move"></label></span>
+              <div class="cell x" role="gridcell" aria-label="Row 3 column 3: X">X</div>
+            </div>
+          </div>
+
+          <aside class="score-panel" aria-labelledby="score-title">
+            <p class="eyebrow">Live board state</p>
+            <h3 id="score-title">High Scores</h3>
+            <ol>
+              <li><span>AAA</span><strong>9,999</strong></li>
+              <li><span>THI</span><strong>8,750</strong></li>
+              <li><span>CSS</span><strong>7,500</strong></li>
+            </ol>
+            <div class="panel-note">
+              <span aria-hidden="true">▦</span>
+              <p>Grid specification: <code>repeat(3, minmax(0, 1fr))</code></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="checkpoints" class="section" aria-labelledby="checkpoint-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Technical breakdown</p>
+          <h2 id="checkpoint-title">Six Mandatory Checkpoints</h2>
+          <p>Each requirement is visible in the source and mapped to a purposeful interface element.</p>
+        </div>
+
+        <div class="checkpoint-grid">
+          <article class="checkpoint-card">
+            <span class="number">01</span>
+            <h3>Flexbox Layout</h3>
+            <p>Header and navigation use a flex container with alignment, spacing, wrapping, and responsive reflow.</p>
+            <code>.header-inner · .site-nav</code>
+          </article>
+          <article class="checkpoint-card">
+            <span class="number">02</span>
+            <h3>CSS Grid Board</h3>
+            <p>The game board is a true 3 × 3 Grid with equal fractional tracks and intentional gaps.</p>
+            <code>.game-board</code>
+          </article>
+          <article class="checkpoint-card">
+            <span class="number">03</span>
+            <h3>Keyframe Motion</h3>
+            <p>The marquee uses 0%, 50%, and 100% stages, transform, delay, and a forwards fill mode.</p>
+            <code>@keyframes cabinet-pulse</code>
+          </article>
+          <article class="checkpoint-card">
+            <span class="number">04</span>
+            <h3>Position + z-index</h3>
+            <p>A relative stage contains multiple absolute layers with explicit stacking order.</p>
+            <code>.layer-stage · .layer-*</code>
+          </article>
+          <article class="checkpoint-card">
+            <span class="number">05</span>
+            <h3>Micro-Interaction</h3>
+            <p>Buttons, navigation, cards, and cells use hover and focus-visible feedback with transitions.</p>
+            <code>:hover · :focus-visible</code>
+          </article>
+          <article class="checkpoint-card">
+            <span class="number">06</span>
+            <h3>Professional + Responsive</h3>
+            <p>Custom properties, external CSS, semantic HTML5, 768px layout changes, and reduced-motion support.</p>
+            <code>:root · @media</code>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="layers" class="section section-alt" aria-labelledby="layers-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Round 3 · Checkpoint 4</p>
+          <h2 id="layers-title">Layered Showpiece</h2>
+          <p>Three visible layers demonstrate positioning and explicit stacking order.</p>
+        </div>
+
+        <div class="layer-stage" aria-label="Layered CSS composition">
+          <div class="layer layer-back" aria-hidden="true"></div>
+          <div class="layer layer-mid" aria-hidden="true"></div>
+          <div class="layer layer-front">
+            <span class="layer-label">Z-INDEX 03</span>
+            <strong>PLAYER 1</strong>
+            <b>WINS!</b>
+            <small>STACKING CONTEXT CONTROL</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scores" class="section" aria-labelledby="scores-title">
+      <div class="container">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Competitive arcade</p>
+            <h2 id="scores-title">Scoreboard</h2>
+          </div>
+          <p class="muted">A polished presentation layer built entirely with HTML5 and CSS.</p>
+        </div>
+
+        <div class="score-grid">
+          <article class="score-card"><span>PLAYER 01</span><strong>9,999</strong><small>CSS MASTER</small></article>
+          <article class="score-card featured"><span>PLAYER 02</span><strong>8,750</strong><small>GRID RUNNER</small></article>
+          <article class="score-card"><span>PLAYER 03</span><strong>7,500</strong><small>FLEX CHAMP</small></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Thirunavukkarasu Palaniappa</strong> · CSC 4370/6370 · Activity 05</p>
+      <p>Semantic HTML5 · External CSS · Zero JavaScript · <a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>

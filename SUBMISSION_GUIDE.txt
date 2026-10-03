@@ -1,0 +1,22 @@
+ACTIVITY 05 — FINAL SUBMISSION GUIDE
+
+1. LOCAL TEST
+Open index.html in Chrome. Test Play, Scores, Checkpoints, Layers, Full Cabinet, Start Cabinet, Inspect Checkpoints, and Open Full Cabinet.
+
+2. STANDALONE CABINET
+Open tic-tac-toe-cabinet/index.html. Test Arcade Home, Play, Scores, Insert Coin, and Back to Arcade Home. Click each empty board cell: it should toggle an X using CSS only.
+
+3. RESPONSIVE TEST
+Test desktop, 768px tablet, and about 375px mobile widths. Confirm no horizontal scrolling and all links remain reachable.
+
+4. VALIDATION
+Validate both HTML pages and both CSS files with the official W3C validators. Save screenshots showing the actual results.
+
+5. CODD
+Publish the package under the exact Codd directory given by your course/Codd Setup files. The main page is the only required public URL unless your instructor asks for subpage URLs. If you publish the standalone cabinet, its URL is an additional optional test/share link.
+
+6. GITHUB
+Push the complete project folder to the team repository. Verify the repository contains index.html, styles.css, and the tic-tac-toe-cabinet folder.
+
+7. EVIDENCE
+Add only your real Round 1, Round 2, Round 3, validation, and demo evidence. Do not invent measurements or screenshots.

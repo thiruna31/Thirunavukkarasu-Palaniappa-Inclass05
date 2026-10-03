@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Activity 05 standalone Tic-Tac-Toe cabinet demonstrating CSS Grid and z-index.">
+  <title>Neon Gold Rush | Tic-Tac-Toe Cabinet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#play">Skip to game</a>
+  <header class="marquee">
+    <div class="brand">★ GOLD RUSH <span>ARCADE</span> ★</div>
+    <nav aria-label="Cabinet menu">
+      <a href="../index.html">Arcade Home</a>
+      <a href="#play">Play</a>
+      <a href="#scores">Scores</a>
+    </nav>
+  </header>
+
+  <main class="cabinet">
+    <section id="play" aria-labelledby="title">
+      <p class="eyebrow">Activity 05 · Checkpoint 2 + 4 · CSS-only interaction demo</p>
+      <h1 id="title">Player 1 <span>vs</span> CPU</h1>
+      <div class="stage">
+        <div class="board" role="group" aria-label="Tic-tac-toe CSS interaction demo">
+          <div class="cell x" role="gridcell" aria-label="Row 1 column 1: X">X</div>
+          <div class="cell o" role="gridcell" aria-label="Row 1 column 2: O">O</div>
+          <span class="cell-slot"><input class="move-toggle" type="checkbox" id="c3">
+          <label class="cell cell-toggle" for="c3" aria-label="Row 1 column 3: toggle X move"></label></span>
+          <div class="cell o" role="gridcell" aria-label="Row 2 column 1: O">O</div>
+          <div class="cell x" role="gridcell" aria-label="Row 2 column 2: X">X</div>
+          <span class="cell-slot"><input class="move-toggle" type="checkbox" id="c6">
+          <label class="cell cell-toggle" for="c6" aria-label="Row 2 column 3: toggle X move"></label></span>
+          <span class="cell-slot"><input class="move-toggle" type="checkbox" id="c7">
+          <label class="cell cell-toggle" for="c7" aria-label="Row 3 column 1: toggle X move"></label></span>
+          <span class="cell-slot"><input class="move-toggle" type="checkbox" id="c8">
+          <label class="cell cell-toggle" for="c8" aria-label="Row 3 column 2: toggle X move"></label></span>
+          <div class="cell x" role="gridcell" aria-label="Row 3 column 3: X">X</div>
+        </div>
+        <div class="win-line" aria-hidden="true"></div>
+        <div class="badge">PLAYER 1 WINS</div>
+      </div>
+    </section>
+
+    <section id="scores" class="scoreboard" aria-labelledby="scores-title">
+      <h2 id="scores-title">High Scores</h2>
+      <div class="score-grid">
+        <div><strong>03</strong><span>PLAYER 1</span></div>
+        <div><strong>01</strong><span>DRAWS</span></div>
+        <div><strong>02</strong><span>CPU</span></div>
+      </div>
+    </section>
+    <div class="actions"><a class="coin-btn" href="#play">Insert Coin</a><a class="home-btn" href="../index.html">Back to Arcade Home</a></div>
+  </main>
+
+  <footer>© 2026 CSS Arcade Night · HTML &amp; CSS only</footer>
+</body>
+</html>

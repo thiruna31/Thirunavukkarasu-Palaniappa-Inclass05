@@ -1,0 +1,19 @@
+Activity 05 — Final package manifest
+
+Required source files
+- index.html
+- styles.css
+- tic-tac-toe-cabinet/index.html
+- tic-tac-toe-cabinet/styles.css
+
+Assignment/reference files
+- css_arcade_broken.html
+- css_arcade_fixed.html
+
+Documentation
+- README.md
+- SUBMISSION_GUIDE.txt
+- submission.txt
+
+Evidence
+- evidence/README.txt (placeholder only; add your real evidence files)

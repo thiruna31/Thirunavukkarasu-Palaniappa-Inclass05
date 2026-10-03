@@ -1,0 +1,22 @@
+Activity 05 — CSS Arcade Night
+
+Student: Thirunavukkarasu Palaniappa
+Course: CSC 4370/6370 Web Programming
+Track: Graduate
+Team Members: [ADD ACTUAL TEAM MEMBERS + STUDENT IDs]
+
+Main Codd URL: [PASTE ACTUAL LIVE CODD URL]
+Standalone Cabinet Codd URL (optional): [PASTE IF YOU PUBLISH THE SUBPAGE]
+GitHub Repository: [PASTE ACTUAL PUBLIC GITHUB REPOSITORY URL]
+
+Evidence submitted separately:
+- Completed team Google Doc/export
+- Round 1 score/report
+- Round 2 bug diagnosis and screenshots
+- Round 3 checkpoint screenshots
+- W3C HTML validation screenshot(s)
+- W3C CSS validation screenshot(s)
+- 15–30 second demo
+
+Notes:
+The main page and standalone cabinet use HTML5 + external CSS only. No JavaScript is used.
